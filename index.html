@@ -5,6 +5,25 @@
 <title>Dulce Tradición</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 <style>
+    .logo-container{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.logo-container img{
+  height:45px;      /* tamaño pequeño y elegante */
+  width:auto;
+  border-radius:6px; /* opcional, se ve más suave */
+}
+
+.logo-container span{
+  font-family:'Playfair Display', serif;
+  font-size:22px;
+  color:#6a8f3c;
+  font-weight:600;
+}
+
 *{
     margin:0;
     padding:0;
@@ -281,13 +300,19 @@ footer{
 <body>
 
 <nav>
-  <h1>Dulce Tradición</h1>
+  <div class="logo-container">
+    <img src="images/logo.png" alt="Logo Dulce Tradición">
+    <span>Dulce Tradición</span>
+  </div>
+
   <ul>
     <li id="btnInicio">Inicio</li>
     <li id="btnProductos">Productos</li>
     <li id="btnSobre">Sobre Nosotros</li>
     <li id="btnContacto">Contacto</li>
   </ul>
+</nav>
+
 </nav>
 
 <div class="hero" style="background:url('images/hero.jpg') center/cover no-repeat;">
@@ -490,5 +515,6 @@ Horario: Lun–Sáb 9am–7pm | Dom 10am–4pm`;
 </body>
 
 </html> 
+
 
 
